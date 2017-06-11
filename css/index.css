@@ -1,0 +1,25 @@
+.left {
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: lightblue;
+  height: 100%;
+}
+.left .profile .image-container {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+}
+
+.right {
+  position: absolute;
+  left: 200px;
+  right: 0;
+  background-color: lightblue;
+  min-height: 600px;
+}
+.right .right-top {
+  line-height: 34px;
+}

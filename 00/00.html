@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src='js/jquery-2.1.4.js' ></script>
+    <script src='js/jquery.cookie.js' ></script>
+<script>
+    //     document.cookie='user=00';
+    //     document.cookie='user1=01';
+    //     // console.log(document.cookie);
+    //     var cookies=document.cookie.split('; ');
+    //     // console.log(cookies);
+    //     var result={};
+    //    cookies.map(function(v,i){
+    //        var value=v.split('=');
+    //        result[value[0]]=value[1];
+    //    })
+    //     console.log(result);
+var obj={
+    name:4,
+    age:54
+};
+var objstring=JSON.stringify(obj);
+console.log(objstring);
+var a = JSON.parse(objstring);
+console.log(a);
+    
+       
+</script>
+</body>
+</html>  

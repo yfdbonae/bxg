@@ -1,0 +1,1930 @@
+
+<!-- saved from url=(0021)http://doc.botue.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	  
+    <title>博学谷接口文档</title>
+		<link href="./博学谷接口文档_files/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css">
+		<link href="./博学谷接口文档_files/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css">
+		<link href="./博学谷接口文档_files/zTreeStyle.css" media="all" rel="stylesheet" type="text/css">
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<!-- <div style='width:25%;'> -->
+						<ul id="tree" class="ztree" style="width: 200px; overflow: auto; position: fixed; z-index: 2147483647; border: 0px none; left: 0px; top: 0px; height: 662px;"><li id="tree_1" class="level0" tabindex="0" hidefocus="true" treenode=""><span id="tree_1_switch" title="" class="button level0 switch roots_docu" treenode_switch=""></span><a id="tree_1_a" class="level0 curSelectedNode" treenode_a="" onclick="" target="_blank" style="" title="Table of Content"><span id="tree_1_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_1_span">Table of Content</span></a></li><li id="tree_2" class="level0" tabindex="0" hidefocus="true" treenode=""><span id="tree_2_switch" title="" class="button level0 switch bottom_open" treenode_switch=""></span><a id="tree_2_a" class="level0" treenode_a="" onclick="" href="http://doc.botue.com/#1" target="_self" style="" title="1. 博学谷接口文档"><span id="tree_2_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_2_span">1. 博学谷接口文档</span></a><ul id="tree_2_ul" class="level0 " style="display:block"><li id="tree_3" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="tree_3_switch" title="" class="button level1 switch center_open" treenode_switch=""></span><a id="tree_3_a" class="level1" treenode_a="" onclick="" href="http://doc.botue.com/#101" target="_self" style="" title="1.1. 文档说明"><span id="tree_3_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_3_span">1.1. 文档说明</span></a><ul id="tree_3_ul" class="level1 line" style="display:block"><li id="tree_4" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_4_switch" title="" class="button level2 switch center_docu" treenode_switch=""></span><a id="tree_4_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10101" target="_self" style="" title="1.1.1. 响应格式"><span id="tree_4_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_4_span">1.1.1. 响应格式</span></a></li><li id="tree_5" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_5_switch" title="" class="button level2 switch bottom_docu" treenode_switch=""></span><a id="tree_5_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10102" target="_self" style="" title="1.1.2. 状态码"><span id="tree_5_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_5_span">1.1.2. 状态码</span></a></li></ul></li><li id="tree_6" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="tree_6_switch" title="" class="button level1 switch center_open" treenode_switch=""></span><a id="tree_6_a" class="level1" treenode_a="" onclick="" href="http://doc.botue.com/#102" target="_self" style="" title="1.2. 权限管理"><span id="tree_6_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_6_span">1.2. 权限管理</span></a><ul id="tree_6_ul" class="level1 line" style="display:block"><li id="tree_7" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_7_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_7_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10201" target="_self" style="" title="1.2.1. 登录"><span id="tree_7_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_7_span">1.2.1. 登录</span></a><ul id="tree_7_ul" class="level2 line" style="display:block"><li id="tree_8" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_8_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_8_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1040101" target="_self" style="" title="1.2.1.1. 地址"><span id="tree_8_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_8_span">1.2.1.1. 地址</span></a></li><li id="tree_9" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_9_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_9_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1040102" target="_self" style="" title="1.2.1.2. 请求"><span id="tree_9_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_9_span">1.2.1.2. 请求</span></a></li><li id="tree_10" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_10_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_10_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1040103" target="_self" style="" title="1.2.1.3. 响应"><span id="tree_10_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_10_span">1.2.1.3. 响应</span></a></li></ul></li><li id="tree_11" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_11_switch" title="" class="button level2 switch bottom_open" treenode_switch=""></span><a id="tree_11_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10202" target="_self" style="" title="1.2.2. 退出登录"><span id="tree_11_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_11_span">1.2.2. 退出登录</span></a><ul id="tree_11_ul" class="level2 " style="display:block"><li id="tree_12" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_12_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_12_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1040201" target="_self" style="" title="1.2.2.1. 地址"><span id="tree_12_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_12_span">1.2.2.1. 地址</span></a></li><li id="tree_13" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_13_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_13_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1040202" target="_self" style="" title="1.2.2.2. 请求"><span id="tree_13_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_13_span">1.2.2.2. 请求</span></a></li><li id="tree_14" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_14_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_14_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1040203" target="_self" style="" title="1.2.2.3. 响应"><span id="tree_14_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_14_span">1.2.2.3. 响应</span></a></li></ul></li></ul></li><li id="tree_15" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="tree_15_switch" title="" class="button level1 switch center_open" treenode_switch=""></span><a id="tree_15_a" class="level1" treenode_a="" onclick="" href="http://doc.botue.com/#103" target="_self" style="" title="1.3. 讲师管理"><span id="tree_15_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_15_span">1.3. 讲师管理</span></a><ul id="tree_15_ul" class="level1 line" style="display:block"><li id="tree_16" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_16_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_16_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10301" target="_self" style="" title="1.3.1. 添加讲师"><span id="tree_16_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_16_span">1.3.1. 添加讲师</span></a><ul id="tree_16_ul" class="level2 line" style="display:block"><li id="tree_17" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_17_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_17_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090101" target="_self" style="" title="1.3.1.1. 地址"><span id="tree_17_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_17_span">1.3.1.1. 地址</span></a></li><li id="tree_18" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_18_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_18_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090102" target="_self" style="" title="1.3.1.2. 请求"><span id="tree_18_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_18_span">1.3.1.2. 请求</span></a></li><li id="tree_19" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_19_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_19_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090103" target="_self" style="" title="1.3.1.3. 响应"><span id="tree_19_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_19_span">1.3.1.3. 响应</span></a></li></ul></li><li id="tree_20" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_20_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_20_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10302" target="_self" style="" title="1.3.2. 讲师列表"><span id="tree_20_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_20_span">1.3.2. 讲师列表</span></a><ul id="tree_20_ul" class="level2 line" style="display:block"><li id="tree_21" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_21_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_21_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090201" target="_self" style="" title="1.3.2.1. 地址"><span id="tree_21_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_21_span">1.3.2.1. 地址</span></a></li><li id="tree_22" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_22_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_22_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090202" target="_self" style="" title="1.3.2.2. 请求"><span id="tree_22_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_22_span">1.3.2.2. 请求</span></a></li><li id="tree_23" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_23_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_23_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090203" target="_self" style="" title="1.3.2.3. 响应"><span id="tree_23_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_23_span">1.3.2.3. 响应</span></a></li></ul></li><li id="tree_24" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_24_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_24_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10303" target="_self" style="" title="1.3.3. 编辑讲师"><span id="tree_24_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_24_span">1.3.3. 编辑讲师</span></a><ul id="tree_24_ul" class="level2 line" style="display:block"><li id="tree_25" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_25_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_25_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090301" target="_self" style="" title="1.3.3.1. 地址"><span id="tree_25_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_25_span">1.3.3.1. 地址</span></a></li><li id="tree_26" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_26_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_26_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090302" target="_self" style="" title="1.3.3.2. 请求"><span id="tree_26_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_26_span">1.3.3.2. 请求</span></a></li><li id="tree_27" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_27_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_27_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090303" target="_self" style="" title="1.3.3.3. 响应"><span id="tree_27_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_27_span">1.3.3.3. 响应</span></a></li></ul></li><li id="tree_28" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_28_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_28_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10304" target="_self" style="" title="1.3.4. 修改讲师"><span id="tree_28_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_28_span">1.3.4. 修改讲师</span></a><ul id="tree_28_ul" class="level2 line" style="display:block"><li id="tree_29" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_29_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_29_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090401" target="_self" style="" title="1.3.4.1. 地址"><span id="tree_29_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_29_span">1.3.4.1. 地址</span></a></li><li id="tree_30" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_30_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_30_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090402" target="_self" style="" title="1.3.4.2. 请求"><span id="tree_30_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_30_span">1.3.4.2. 请求</span></a></li><li id="tree_31" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_31_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_31_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090403" target="_self" style="" title="1.3.4.3. 响应"><span id="tree_31_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_31_span">1.3.4.3. 响应</span></a></li></ul></li><li id="tree_32" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_32_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_32_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10305" target="_self" style="" title="1.3.5. 更新个人资料"><span id="tree_32_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_32_span">1.3.5. 更新个人资料</span></a><ul id="tree_32_ul" class="level2 line" style="display:block"><li id="tree_33" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_33_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_33_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090501" target="_self" style="" title="1.3.5.1. 地址"><span id="tree_33_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_33_span">1.3.5.1. 地址</span></a></li><li id="tree_34" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_34_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_34_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090502" target="_self" style="" title="1.3.5.2. 请求"><span id="tree_34_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_34_span">1.3.5.2. 请求</span></a></li><li id="tree_35" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_35_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_35_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090503" target="_self" style="" title="1.3.5.3. 响应"><span id="tree_35_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_35_span">1.3.5.3. 响应</span></a></li></ul></li><li id="tree_36" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_36_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_36_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10306" target="_self" style="" title="1.3.6. 查看讲师"><span id="tree_36_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_36_span">1.3.6. 查看讲师</span></a><ul id="tree_36_ul" class="level2 line" style="display:block"><li id="tree_37" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_37_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_37_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090601" target="_self" style="" title="1.3.6.1. 地址"><span id="tree_37_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_37_span">1.3.6.1. 地址</span></a></li><li id="tree_38" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_38_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_38_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090602" target="_self" style="" title="1.3.6.2. 请求"><span id="tree_38_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_38_span">1.3.6.2. 请求</span></a></li><li id="tree_39" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_39_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_39_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090603" target="_self" style="" title="1.3.6.3. 响应"><span id="tree_39_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_39_span">1.3.6.3. 响应</span></a></li></ul></li><li id="tree_40" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_40_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_40_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10307" target="_self" style="" title="1.3.7. 注销/启用讲师"><span id="tree_40_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_40_span">1.3.7. 注销/启用讲师</span></a><ul id="tree_40_ul" class="level2 line" style="display:block"><li id="tree_41" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_41_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_41_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090701" target="_self" style="" title="1.3.7.1. 地址"><span id="tree_41_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_41_span">1.3.7.1. 地址</span></a></li><li id="tree_42" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_42_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_42_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090702" target="_self" style="" title="1.3.7.2. 请求"><span id="tree_42_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_42_span">1.3.7.2. 请求</span></a></li><li id="tree_43" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_43_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_43_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090703" target="_self" style="" title="1.3.7.3. 响应"><span id="tree_43_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_43_span">1.3.7.3. 响应</span></a></li></ul></li><li id="tree_44" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_44_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_44_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10308" target="_self" style="" title="1.3.8. 个人资料"><span id="tree_44_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_44_span">1.3.8. 个人资料</span></a><ul id="tree_44_ul" class="level2 line" style="display:block"><li id="tree_45" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_45_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_45_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090801" target="_self" style="" title="1.3.8.1. 地址"><span id="tree_45_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_45_span">1.3.8.1. 地址</span></a></li><li id="tree_46" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_46_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_46_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090802" target="_self" style="" title="1.3.8.2. 请求"><span id="tree_46_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_46_span">1.3.8.2. 请求</span></a></li><li id="tree_47" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_47_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_47_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090803" target="_self" style="" title="1.3.8.3. 响应"><span id="tree_47_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_47_span">1.3.8.3. 响应</span></a></li></ul></li><li id="tree_48" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_48_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_48_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10309" target="_self" style="" title="1.3.9. 上传头像"><span id="tree_48_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_48_span">1.3.9. 上传头像</span></a><ul id="tree_48_ul" class="level2 line" style="display:block"><li id="tree_49" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_49_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_49_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090901" target="_self" style="" title="1.3.9.1. 地址"><span id="tree_49_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_49_span">1.3.9.1. 地址</span></a></li><li id="tree_50" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_50_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_50_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090902" target="_self" style="" title="1.3.9.2. 请求"><span id="tree_50_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_50_span">1.3.9.2. 请求</span></a></li><li id="tree_51" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_51_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_51_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1090903" target="_self" style="" title="1.3.9.3. 响应"><span id="tree_51_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_51_span">1.3.9.3. 响应</span></a></li></ul></li><li id="tree_52" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_52_switch" title="" class="button level2 switch bottom_open" treenode_switch=""></span><a id="tree_52_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10310" target="_self" style="" title="1.3.10. 修改密码"><span id="tree_52_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_52_span">1.3.10. 修改密码</span></a><ul id="tree_52_ul" class="level2 " style="display:block"><li id="tree_53" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_53_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_53_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1091001" target="_self" style="" title="1.3.10.1. 地址"><span id="tree_53_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_53_span">1.3.10.1. 地址</span></a></li><li id="tree_54" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_54_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_54_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1091002" target="_self" style="" title="1.3.10.2. 请求"><span id="tree_54_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_54_span">1.3.10.2. 请求</span></a></li><li id="tree_55" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_55_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_55_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1091003" target="_self" style="" title="1.3.10.3. 响应"><span id="tree_55_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_55_span">1.3.10.3. 响应</span></a></li></ul></li></ul></li><li id="tree_56" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="tree_56_switch" title="" class="button level1 switch center_open" treenode_switch=""></span><a id="tree_56_a" class="level1" treenode_a="" onclick="" href="http://doc.botue.com/#104" target="_self" style="" title="1.4. 分类管理"><span id="tree_56_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_56_span">1.4. 分类管理</span></a><ul id="tree_56_ul" class="level1 line" style="display:block"><li id="tree_57" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_57_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_57_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10401" target="_self" style="" title="1.4.1. 顶级分类"><span id="tree_57_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_57_span">1.4.1. 顶级分类</span></a><ul id="tree_57_ul" class="level2 line" style="display:block"><li id="tree_58" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_58_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_58_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1160101" target="_self" style="" title="1.4.1.1. 地址"><span id="tree_58_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_58_span">1.4.1.1. 地址</span></a></li><li id="tree_59" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_59_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_59_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1160102" target="_self" style="" title="1.4.1.2. 请求"><span id="tree_59_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_59_span">1.4.1.2. 请求</span></a></li><li id="tree_60" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_60_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_60_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1160103" target="_self" style="" title="1.4.1.3. 响应"><span id="tree_60_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_60_span">1.4.1.3. 响应</span></a></li></ul></li><li id="tree_61" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_61_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_61_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10402" target="_self" style="" title="1.4.2. 子级分类"><span id="tree_61_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_61_span">1.4.2. 子级分类</span></a><ul id="tree_61_ul" class="level2 line" style="display:block"><li id="tree_62" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_62_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_62_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1160201" target="_self" style="" title="1.4.2.1. 地址"><span id="tree_62_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_62_span">1.4.2.1. 地址</span></a></li><li id="tree_63" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_63_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_63_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1160202" target="_self" style="" title="1.4.2.2. 请求"><span id="tree_63_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_63_span">1.4.2.2. 请求</span></a></li><li id="tree_64" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_64_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_64_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1160203" target="_self" style="" title="1.4.2.3. 响应"><span id="tree_64_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_64_span">1.4.2.3. 响应</span></a></li></ul></li><li id="tree_65" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_65_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_65_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10403" target="_self" style="" title="1.4.3. 添加分类"><span id="tree_65_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_65_span">1.4.3. 添加分类</span></a><ul id="tree_65_ul" class="level2 line" style="display:block"><li id="tree_66" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_66_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_66_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1160301" target="_self" style="" title="1.4.3.1. 地址"><span id="tree_66_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_66_span">1.4.3.1. 地址</span></a></li><li id="tree_67" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_67_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_67_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1160302" target="_self" style="" title="1.4.3.2. 请求"><span id="tree_67_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_67_span">1.4.3.2. 请求</span></a></li><li id="tree_68" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_68_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_68_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1160303" target="_self" style="" title="1.4.3.3. 响应"><span id="tree_68_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_68_span">1.4.3.3. 响应</span></a></li></ul></li><li id="tree_69" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_69_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_69_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10404" target="_self" style="" title="1.4.4. 分类列表"><span id="tree_69_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_69_span">1.4.4. 分类列表</span></a><ul id="tree_69_ul" class="level2 line" style="display:block"><li id="tree_70" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_70_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_70_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1160401" target="_self" style="" title="1.4.4.1. 地址"><span id="tree_70_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_70_span">1.4.4.1. 地址</span></a></li><li id="tree_71" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_71_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_71_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1160402" target="_self" style="" title="1.4.4.2. 请求"><span id="tree_71_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_71_span">1.4.4.2. 请求</span></a></li><li id="tree_72" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_72_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_72_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1160403" target="_self" style="" title="1.4.4.3. 响应"><span id="tree_72_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_72_span">1.4.4.3. 响应</span></a></li></ul></li><li id="tree_73" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_73_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_73_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10405" target="_self" style="" title="1.4.5. 编辑分类"><span id="tree_73_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_73_span">1.4.5. 编辑分类</span></a><ul id="tree_73_ul" class="level2 line" style="display:block"><li id="tree_74" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_74_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_74_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1160501" target="_self" style="" title="1.4.5.1. 地址"><span id="tree_74_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_74_span">1.4.5.1. 地址</span></a></li><li id="tree_75" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_75_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_75_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1160502" target="_self" style="" title="1.4.5.2. 请求"><span id="tree_75_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_75_span">1.4.5.2. 请求</span></a></li><li id="tree_76" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_76_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_76_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1160503" target="_self" style="" title="1.4.5.3. 响应"><span id="tree_76_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_76_span">1.4.5.3. 响应</span></a></li></ul></li><li id="tree_77" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_77_switch" title="" class="button level2 switch bottom_open" treenode_switch=""></span><a id="tree_77_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10406" target="_self" style="" title="1.4.6. 修改分类"><span id="tree_77_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_77_span">1.4.6. 修改分类</span></a><ul id="tree_77_ul" class="level2 " style="display:block"><li id="tree_78" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_78_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_78_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1160601" target="_self" style="" title="1.4.6.1. 地址"><span id="tree_78_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_78_span">1.4.6.1. 地址</span></a></li><li id="tree_79" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_79_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_79_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1160602" target="_self" style="" title="1.4.6.2. 请求"><span id="tree_79_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_79_span">1.4.6.2. 请求</span></a></li><li id="tree_80" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_80_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_80_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1160603" target="_self" style="" title="1.4.6.3. 响应"><span id="tree_80_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_80_span">1.4.6.3. 响应</span></a></li></ul></li></ul></li><li id="tree_81" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="tree_81_switch" title="" class="button level1 switch bottom_open" treenode_switch=""></span><a id="tree_81_a" class="level1" treenode_a="" onclick="" href="http://doc.botue.com/#105" target="_self" style="" title="1.5. 课程管理"><span id="tree_81_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_81_span">1.5. 课程管理</span></a><ul id="tree_81_ul" class="level1 " style="display:block"><li id="tree_82" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_82_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_82_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10501" target="_self" style="" title="1.5.1. 创建课程"><span id="tree_82_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_82_span">1.5.1. 创建课程</span></a><ul id="tree_82_ul" class="level2 line" style="display:block"><li id="tree_83" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_83_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_83_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250101" target="_self" style="" title="1.5.1.1. 地址"><span id="tree_83_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_83_span">1.5.1.1. 地址</span></a></li><li id="tree_84" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_84_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_84_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250102" target="_self" style="" title="1.5.1.2. 请求"><span id="tree_84_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_84_span">1.5.1.2. 请求</span></a></li><li id="tree_85" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_85_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_85_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250103" target="_self" style="" title="1.5.1.3. 响应"><span id="tree_85_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_85_span">1.5.1.3. 响应</span></a></li></ul></li><li id="tree_86" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_86_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_86_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10502" target="_self" style="" title="1.5.2. 基本信息"><span id="tree_86_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_86_span">1.5.2. 基本信息</span></a><ul id="tree_86_ul" class="level2 line" style="display:block"><li id="tree_87" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_87_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_87_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250201" target="_self" style="" title="1.5.2.1. 地址"><span id="tree_87_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_87_span">1.5.2.1. 地址</span></a></li><li id="tree_88" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_88_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_88_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250202" target="_self" style="" title="1.5.2.2. 请求"><span id="tree_88_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_88_span">1.5.2.2. 请求</span></a></li><li id="tree_89" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_89_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_89_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250203" target="_self" style="" title="1.5.2.3. 响应"><span id="tree_89_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_89_span">1.5.2.3. 响应</span></a></li></ul></li><li id="tree_90" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_90_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_90_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10503" target="_self" style="" title="1.5.3. 更新基本信息"><span id="tree_90_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_90_span">1.5.3. 更新基本信息</span></a><ul id="tree_90_ul" class="level2 line" style="display:block"><li id="tree_91" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_91_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_91_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250301" target="_self" style="" title="1.5.3.1. 地址"><span id="tree_91_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_91_span">1.5.3.1. 地址</span></a></li><li id="tree_92" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_92_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_92_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250302" target="_self" style="" title="1.5.3.2. 请求"><span id="tree_92_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_92_span">1.5.3.2. 请求</span></a></li><li id="tree_93" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_93_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_93_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250303" target="_self" style="" title="1.5.3.3. 响应"><span id="tree_93_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_93_span">1.5.3.3. 响应</span></a></li></ul></li><li id="tree_94" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_94_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_94_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10504" target="_self" style="" title="1.5.4. 课程图片"><span id="tree_94_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_94_span">1.5.4. 课程图片</span></a><ul id="tree_94_ul" class="level2 line" style="display:block"><li id="tree_95" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_95_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_95_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250401" target="_self" style="" title="1.5.4.1. 地址"><span id="tree_95_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_95_span">1.5.4.1. 地址</span></a></li><li id="tree_96" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_96_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_96_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250402" target="_self" style="" title="1.5.4.2. 请求"><span id="tree_96_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_96_span">1.5.4.2. 请求</span></a></li><li id="tree_97" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_97_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_97_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250403" target="_self" style="" title="1.5.4.3. 响应"><span id="tree_97_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_97_span">1.5.4.3. 响应</span></a></li></ul></li><li id="tree_98" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_98_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_98_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10505" target="_self" style="" title="1.5.5. 上传封面图"><span id="tree_98_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_98_span">1.5.5. 上传封面图</span></a><ul id="tree_98_ul" class="level2 line" style="display:block"><li id="tree_99" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_99_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_99_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250501" target="_self" style="" title="1.5.5.1. 地址"><span id="tree_99_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_99_span">1.5.5.1. 地址</span></a></li><li id="tree_100" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_100_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_100_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250502" target="_self" style="" title="1.5.5.2. 请求"><span id="tree_100_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_100_span">1.5.5.2. 请求</span></a></li><li id="tree_101" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_101_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_101_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250503" target="_self" style="" title="1.5.5.3. 响应"><span id="tree_101_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_101_span">1.5.5.3. 响应</span></a></li></ul></li><li id="tree_102" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_102_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_102_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10506" target="_self" style="" title="1.5.6. 图片裁切"><span id="tree_102_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_102_span">1.5.6. 图片裁切</span></a><ul id="tree_102_ul" class="level2 line" style="display:block"><li id="tree_103" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_103_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_103_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250601" target="_self" style="" title="1.5.6.1. 地址"><span id="tree_103_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_103_span">1.5.6.1. 地址</span></a></li><li id="tree_104" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_104_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_104_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250602" target="_self" style="" title="1.5.6.2. 请求"><span id="tree_104_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_104_span">1.5.6.2. 请求</span></a></li><li id="tree_105" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_105_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_105_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250603" target="_self" style="" title="1.5.6.3. 响应"><span id="tree_105_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_105_span">1.5.6.3. 响应</span></a></li></ul></li><li id="tree_106" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_106_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_106_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10507" target="_self" style="" title="1.5.7. 课时管理"><span id="tree_106_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_106_span">1.5.7. 课时管理</span></a><ul id="tree_106_ul" class="level2 line" style="display:block"><li id="tree_107" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_107_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_107_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250701" target="_self" style="" title="1.5.7.1. 地址"><span id="tree_107_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_107_span">1.5.7.1. 地址</span></a></li><li id="tree_108" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_108_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_108_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250702" target="_self" style="" title="1.5.7.2. 请求"><span id="tree_108_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_108_span">1.5.7.2. 请求</span></a></li><li id="tree_109" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_109_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_109_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250703" target="_self" style="" title="1.5.7.3. 响应"><span id="tree_109_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_109_span">1.5.7.3. 响应</span></a></li></ul></li><li id="tree_110" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_110_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_110_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10508" target="_self" style="" title="1.5.8. 添加课时"><span id="tree_110_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_110_span">1.5.8. 添加课时</span></a><ul id="tree_110_ul" class="level2 line" style="display:block"><li id="tree_111" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_111_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_111_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250801" target="_self" style="" title="1.5.8.1. 地址"><span id="tree_111_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_111_span">1.5.8.1. 地址</span></a></li><li id="tree_112" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_112_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_112_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250802" target="_self" style="" title="1.5.8.2. 请求"><span id="tree_112_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_112_span">1.5.8.2. 请求</span></a></li><li id="tree_113" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_113_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_113_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250803" target="_self" style="" title="1.5.8.3. 响应"><span id="tree_113_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_113_span">1.5.8.3. 响应</span></a></li></ul></li><li id="tree_114" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_114_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_114_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10509" target="_self" style="" title="1.5.9. 编辑课时"><span id="tree_114_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_114_span">1.5.9. 编辑课时</span></a><ul id="tree_114_ul" class="level2 line" style="display:block"><li id="tree_115" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_115_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_115_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250901" target="_self" style="" title="1.5.9.1. 地址"><span id="tree_115_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_115_span">1.5.9.1. 地址</span></a></li><li id="tree_116" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_116_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_116_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250902" target="_self" style="" title="1.5.9.2. 请求"><span id="tree_116_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_116_span">1.5.9.2. 请求</span></a></li><li id="tree_117" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_117_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_117_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1250903" target="_self" style="" title="1.5.9.3. 响应"><span id="tree_117_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_117_span">1.5.9.3. 响应</span></a></li></ul></li><li id="tree_118" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_118_switch" title="" class="button level2 switch center_open" treenode_switch=""></span><a id="tree_118_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10510" target="_self" style="" title="1.5.10. 修改课时"><span id="tree_118_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_118_span">1.5.10. 修改课时</span></a><ul id="tree_118_ul" class="level2 line" style="display:block"><li id="tree_119" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_119_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_119_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1251001" target="_self" style="" title="1.5.10.1. 地址"><span id="tree_119_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_119_span">1.5.10.1. 地址</span></a></li><li id="tree_120" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_120_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_120_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1251002" target="_self" style="" title="1.5.10.2. 请求"><span id="tree_120_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_120_span">1.5.10.2. 请求</span></a></li><li id="tree_121" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_121_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_121_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1251003" target="_self" style="" title="1.5.10.3. 响应"><span id="tree_121_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_121_span">1.5.10.3. 响应</span></a></li></ul></li><li id="tree_122" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="tree_122_switch" title="" class="button level2 switch bottom_open" treenode_switch=""></span><a id="tree_122_a" class="level2" treenode_a="" onclick="" href="http://doc.botue.com/#10511" target="_self" style="" title="1.5.11. 课程列表"><span id="tree_122_ico" title="" treenode_ico="" class="button ico_open" style="width:0px;height:0px;"></span><span id="tree_122_span">1.5.11. 课程列表</span></a><ul id="tree_122_ul" class="level2 " style="display:block"><li id="tree_123" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_123_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_123_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1251101" target="_self" style="" title="1.5.11.1. 地址"><span id="tree_123_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_123_span">1.5.11.1. 地址</span></a></li><li id="tree_124" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_124_switch" title="" class="button level3 switch center_docu" treenode_switch=""></span><a id="tree_124_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1251102" target="_self" style="" title="1.5.11.2. 请求"><span id="tree_124_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_124_span">1.5.11.2. 请求</span></a></li><li id="tree_125" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="tree_125_switch" title="" class="button level3 switch bottom_docu" treenode_switch=""></span><a id="tree_125_a" class="level3" treenode_a="" onclick="" href="http://doc.botue.com/#1251103" target="_self" style="" title="1.5.11.3. 响应"><span id="tree_125_ico" title="" treenode_ico="" class="button ico_docu" style="width:0px;height:0px;"></span><span id="tree_125_span">1.5.11.3. 响应</span></a></li></ul></li></ul></li></ul></li></ul>
+				<!-- </div> -->
+        <div id="readme" style="width: auto; margin-left: 200px;">
+          	<article class="markdown-body">
+            	<h1 id="1">1. 博学谷接口文档</h1>
+<h2 id="101">1.1. 文档说明</h2>
+<h3 id="10101">1.1.1. 响应格式</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">code</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">状态码</td>
+</tr>
+<tr>
+<td style="text-align:left">msg</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">状态信息</td>
+</tr>
+<tr>
+<td style="text-align:left">result</td>
+<td style="text-align:left">mixed</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">响应结果</td>
+</tr>
+<tr>
+<td style="text-align:left">time</td>
+<td style="text-align:left">timestamp</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">时间戳</td>
+</tr>
+</tbody>
+</table>
+<h3 id="10102">1.1.2. 状态码</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">状态码</th>
+<th style="text-align:left">状态信息</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">200</td>
+<td style="text-align:left">OK</td>
+<td style="text-align:left">成功</td>
+</tr>
+<tr>
+<td style="text-align:left">401</td>
+<td style="text-align:left">Unauthorized</td>
+<td style="text-align:left">未授权</td>
+</tr>
+<tr>
+<td style="text-align:left">403</td>
+<td style="text-align:left">Forbidden</td>
+<td style="text-align:left">没有权限</td>
+</tr>
+<tr>
+<td style="text-align:left">500</td>
+<td style="text-align:left">Interernal Server Error</td>
+<td style="text-align:left">服务器内部错误</td>
+</tr>
+</tbody>
+</table>
+<h2 id="102">1.2. 权限管理</h2>
+<h3 id="10201">1.2.1. 登录</h3>
+<blockquote>
+<p>使用讲师姓名和讲师密码登录（如果讲师状态被禁用无法登录）</p>
+</blockquote>
+<h4 id="1040101">1.2.1.1. 地址</h4>
+<p><a href="http://api.botue.com/login">http://api.botue.com/login</a></p>
+<h4 id="1040102">1.2.1.2. 请求</h4>
+<ul>
+<li>请求方式 POST</li>
+<li>数据格式 FormData</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">tc_name</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">用户名称</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_pass</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">用户密码</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1040103">1.2.1.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<p>JSON示例</p>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "登录成功!",
+  "result": {
+    "tc_name": "前端学院",
+    "tc_avatar": "http://static.botue.com/images/avatar/58613845e749c.jpg"
+  },
+  "time": 1482213239
+}
+</code></pre>
+<h3 id="10202">1.2.2. 退出登录</h3>
+<h4 id="1040201">1.2.2.1. 地址</h4>
+<p><a href="http://api.botue.com/logout">http://api.botue.com/logout</a></p>
+<h4 id="1040202">1.2.2.2. 请求</h4>
+<ul>
+<li>请求方式 POST</li>
+<li>请求参数 无</li>
+</ul>
+<h4 id="1040203">1.2.2.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "退出成功",
+  "time": 1482385456
+}
+</code></pre>
+<h2 id="103">1.3. 讲师管理</h2>
+<h3 id="10301">1.3.1. 添加讲师</h3>
+<blockquote>
+<p>添加讲师，需要管理员权限</p>
+</blockquote>
+<h4 id="1090101">1.3.1.1. 地址</h4>
+<p><a href="http://api.botue.com/teacher/add">http://api.botue.com/teacher/add</a></p>
+<h4 id="1090102">1.3.1.2. 请求</h4>
+<ul>
+<li>请求方式 POST</li>
+<li>支持格式 FormData</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">tc_name</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">讲师名称</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_pass</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">讲师密码</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_join_date</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">入职时间 yyyy-mm-dd</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_type</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">讲师类型 0 管理员 1 普通</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_gender</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">讲师性别 0 男 1 女</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1090103">1.3.1.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "time": 1482385456
+}
+</code></pre>
+<h3 id="10302">1.3.2. 讲师列表</h3>
+<blockquote>
+<p>查看所有非管理员讲师，需要管理员权限</p>
+</blockquote>
+<h4 id="1090201">1.3.2.1. 地址</h4>
+<p><a href="http://api.botue.com/teacher">http://api.botue.com/teacher</a></p>
+<h4 id="1090202">1.3.2.2. 请求</h4>
+<ul>
+<li>请求方式 GET</li>
+<li>请求参数 无</li>
+</ul>
+<h4 id="1090203">1.3.2.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<p>JSON示例</p>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "result": [
+    {
+      "tc_id": 2,
+      "tc_name": "李清照",
+      "tc_roster": "易安居士",
+      "tc_gender": 1,
+      "tc_cellphone": "18500409233",
+      "tc_email": "linan@itcast.cn",
+      "tc_status": 0,
+      "tc_birthday": "1991-03-01",
+      "tc_join_date": "2015-09-30"
+    },
+    {
+      "tc_id": 9,
+      "tc_name": "令狐冲",
+      "tc_roster": "攻城狮",
+      "tc_gender": 1,
+      "tc_cellphone": "",
+      "tc_email": "",
+      "tc_status": 0,
+      "tc_birthday": "1970-01-01",
+      "tc_join_date": "1970-01-01"
+    },
+    {
+      "tc_id": 12,
+      "tc_name": "李奎",
+      "tc_roster": "黑旋风",
+      "tc_gender": 1,
+      "tc_cellphone": "",
+      "tc_email": "",
+      "tc_status": 0,
+      "tc_birthday": "1970-01-01",
+      "tc_join_date": "1970-01-01"
+    },
+    {
+      "tc_id": 16,
+      "tc_name": "风清杨",
+      "tc_roster": "无剑级",
+      "tc_gender": 0,
+      "tc_cellphone": "",
+      "tc_email": "",
+      "tc_status": 0,
+      "tc_birthday": "1970-01-01",
+      "tc_join_date": "1970-01-01"
+    },
+  ]
+}
+</code></pre>
+<h3 id="10303">1.3.3. 编辑讲师</h3>
+<blockquote>
+<p>查询讲师信息并编辑，需要管理员权限</p>
+</blockquote>
+<h4 id="1090301">1.3.3.1. 地址</h4>
+<p><a href="http://api.botue.com/teacher/edit">http://api.botue.com/teacher/edit</a></p>
+<h4 id="1090302">1.3.3.2. 请求</h4>
+<ul>
+<li>请求方式 GET</li>
+<li>支持格式 queryString</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">tc_id</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">讲师id</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1090303">1.3.3.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "result": {
+    "tc_id": 2,
+    "tc_name": "李清照",
+    "tc_join_date": "2015-09-30",
+    "tc_type": 1,
+    "tc_gender": 1
+  },
+  "time": 1482470649
+}
+</code></pre>
+<h3 id="10304">1.3.4. 修改讲师</h3>
+<blockquote>
+<p>更新讲师资料，需要管理员权限</p>
+</blockquote>
+<h4 id="1090401">1.3.4.1. 地址</h4>
+<p><a href="http://api.botue.com/teacher/update">http://api.botue.com/teacher/update</a></p>
+<h4 id="1090402">1.3.4.2. 请求</h4>
+<ul>
+<li>请求方式 POST</li>
+<li>支持格式 FormData</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">tc_id</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">讲师id</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_name</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">讲师姓名</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_join_date</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">入职日期</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_type</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">讲师类型 0 管理员 1 普通</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_gender</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">讲师性别 0 男 1 女</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1090403">1.3.4.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "time": 1482385456
+}
+</code></pre>
+<h3 id="10305">1.3.5. 更新个人资料</h3>
+<blockquote>
+<p>更新或完善讲师信息</p>
+</blockquote>
+<h4 id="1090501">1.3.5.1. 地址</h4>
+<p><a href="http://api.botue.com/teacher/modify">http://api.botue.com/teacher/modify</a></p>
+<h4 id="1090502">1.3.5.2. 请求</h4>
+<ul>
+<li>请求方式 POST</li>
+<li>支持格式 FormData</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">tc_id</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">讲师id</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_roster</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">昵称</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_gender</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">性别 0 男 1 女</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_birthday</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">生日 yyyy-mm-dd</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_province</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">所在省份</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_city</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">所在城市</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_district</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">所在县/区</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_hometown</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">家乡</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_cellphone</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">手机号码</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_email</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">邮箱地址</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_join_date</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">入职时间</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_introduce</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">自我介绍</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1090503">1.3.5.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "time": 1482391415
+}
+</code></pre>
+<h3 id="10306">1.3.6. 查看讲师</h3>
+<blockquote>
+<p>查看讲师详细信息，需要管理员权限</p>
+</blockquote>
+<h4 id="1090601">1.3.6.1. 地址</h4>
+<p><a href="http://api.botue.com/teacher/view">http://api.botue.com/teacher/view</a></p>
+<h4 id="1090602">1.3.6.2. 请求</h4>
+<ul>
+<li>请求方式 GET</li>
+<li>支持格式 queryString</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">tc_id</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">讲师id</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1090603">1.3.6.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "result": {
+    "tc_id": 8,
+    "tc_name": "前端学院",
+    "tc_roster": "攻城狮",
+    "tc_pass": "c33367701511b4f6020ec61ded352059",
+    "tc_status": 0,
+    "tc_birthday": "1990-02-14",
+    "tc_hometown": "河北省|保定市|曲阳县",
+    "tc_avatar": "http://static.botue.com/images/avatar/5861fd014b193.jpg",
+    "tc_gender": 0,
+    "tc_cellphone": "13666668886",
+    "tc_email": "web@itcast.cn",
+    "tc_join_date": "2016-07-07",
+    "tc_introduce": "&lt;p&gt;前端工程师的职责是制作标准优化的代码，并增加交互动态功能，开发JavaScript以及Flash模块，同时结合后台开发技术模拟整体效果，进行丰富互联网的Web开发，致力于通过技术改善用户体验。&lt;/p&gt;\n\n&lt;p&gt;前端工程师属于IT技术职业的一种，是近5年发展起来的职业，旧的体系将其定义为Web前端工程师，主要的技术包含：HTML、JavaScript、CSS。但IT技术属于变化比较快的领域，最近发生了很大的变革，新的体系下，前端工程师技术又增加了：nodejs、Hybrid App。&lt;/p&gt;\n"
+  },
+  "time": 1482909980
+}
+</code></pre>
+<h3 id="10307">1.3.7. 注销/启用讲师</h3>
+<blockquote>
+<p>注销或启用讲师，需要管理员权限</p>
+</blockquote>
+<h4 id="1090701">1.3.7.1. 地址</h4>
+<p><a href="http://api.botue.com/teacher/handle">http://api.botue.com/teacher/handle</a></p>
+<h4 id="1090702">1.3.7.2. 请求</h4>
+<ul>
+<li>请求方式 POST</li>
+<li>支持格式 FormData</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">tc_id</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">讲师id</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_status</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">状态</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1090703">1.3.7.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "result": {
+    "tc_status": 1
+    },
+  "time": 1482560649
+}
+</code></pre>
+<h3 id="10308">1.3.8. 个人资料</h3>
+<blockquote>
+<p>修改或完善个人资料</p>
+</blockquote>
+<h4 id="1090801">1.3.8.1. 地址</h4>
+<p><a href="http://api.botue.com/teacher/profile">http://api.botue.com/teacher/profile</a></p>
+<h4 id="1090802">1.3.8.2. 请求</h4>
+<ul>
+<li>请求方式 GET</li>
+<li>请求参数 无</li>
+</ul>
+<h4 id="1090803">1.3.8.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "result": {
+    "tc_id": 8,
+    "tc_name": "前端学院",
+    "tc_roster": "攻城狮",
+    "tc_birthday": "1990-02-14",
+    "tc_province": "130000",
+    "tc_city": "130600",
+    "tc_district": "130634",
+    "tc_hometown": "河北省|保定市|曲阳县",
+    "tc_avatar": "http://static.botue.com/images/avatar/58613845e749c.jpg",
+    "tc_gender": 0,
+    "tc_cellphone": "13666668888",
+    "tc_email": "web@itcast.cn",
+    "tc_join_date": "2016-07-07",
+    "tc_introduce": "&lt;p&gt;前端工程师的职责是制作标准优化的代码，并增加交互动态功能，开发JavaScript以及Flash模块，同时结合后台开发技术模拟整体效果，进行丰富互联网的Web开发，致力于通过技术改善用户体验。&lt;/p&gt;\n\n&lt;p&gt;前端工程师属于IT技术职业的一种，是近5年发展起来的职业，旧的体系将其定义为Web前端工程师，主要的技术包含：HTML、JavaScript、CSS。但IT技术属于变化比较快的领域，最近发生了很大的变革，新的体系下，前端工程师技术又增加了：nodejs、Hybrid App。&lt;/p&gt;\n"
+  },
+  "time": 1482766412
+}
+</code></pre>
+<h3 id="10309">1.3.9. 上传头像</h3>
+<blockquote>
+<p>用户上传自定义头像</p>
+</blockquote>
+<h4 id="1090901">1.3.9.1. 地址</h4>
+<p><a href="http://api.botue.com/uploader/avatar">http://api.botue.com/uploader/avatar</a></p>
+<h4 id="1090902">1.3.9.2. 请求</h4>
+<ul>
+<li>请求方式 POST</li>
+<li>支持格式 multipart/form-data</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">tc_avatar</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">stream</td>
+<td style="text-align:left">图片格式</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1090903">1.3.9.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "result": {
+    "path": "http://static.botue.com/images/avatar/58613cba34760.jpg"
+  }
+  "time": 1482767547
+}
+</code></pre>
+<h3 id="10310">1.3.10. 修改密码</h3>
+<blockquote>
+<p>修改讲师登录密码</p>
+</blockquote>
+<h4 id="1091001">1.3.10.1. 地址</h4>
+<p><a href="http://api.botue.com/teacher/repass">http://api.botue.com/teacher/repass</a></p>
+<h4 id="1091002">1.3.10.2. 请求</h4>
+<ul>
+<li>请求方式 POST</li>
+<li>支持格式 FormData</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">tc_pass</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">原密码</td>
+</tr>
+<tr>
+<td style="text-align:left">tc_new_pass</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">新密码</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1091003">1.3.10.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "time": 1482395042
+}
+</code></pre>
+<h2 id="104">1.4. 分类管理</h2>
+<h3 id="10401">1.4.1. 顶级分类</h3>
+<blockquote>
+<p>获取顶级课程分类</p>
+</blockquote>
+<h4 id="1160101">1.4.1.1. 地址</h4>
+<p><a href="http://api.botue.com/category/top">http://api.botue.com/category/top</a></p>
+<h4 id="1160102">1.4.1.2. 请求</h4>
+<ul>
+<li>请求方式 GET</li>
+<li>请求参数 无</li>
+</ul>
+<h4 id="1160103">1.4.1.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "result": [
+    {
+      "cg_id": 1,
+      "cg_name": "前端开发"
+    },
+    {
+      "cg_id": 2,
+      "cg_name": "后端开发"
+    },
+    {
+      "cg_id": 3,
+      "cg_name": "数据库"
+    },
+    {
+      "cg_id": 4,
+      "cg_name": "视觉设计"
+    },
+    {
+      "cg_id": 15,
+      "cg_name": "移动开发"
+    },
+    {
+      "cg_id": 16,
+      "cg_name": "云计算&amp;大数据"
+    },
+    {
+      "cg_id": 17,
+      "cg_name": "运维&amp;测试"
+    }
+  ],
+  "time": 1482913594
+}
+</code></pre>
+<h3 id="10402">1.4.2. 子级分类</h3>
+<blockquote>
+<p>查询子分类</p>
+</blockquote>
+<h4 id="1160201">1.4.2.1. 地址</h4>
+<p><a href="http://api.botue.com/category/child">http://api.botue.com/category/child</a></p>
+<h4 id="1160202">1.4.2.2. 请求</h4>
+<ul>
+<li>请求方式 GET</li>
+<li>支持格式 queryString</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">cg_id</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">顶级分类id</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1160203">1.4.2.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "result": [
+    {
+      "cg_id": 5,
+      "cg_name": "HTML/CSS"
+    },
+    {
+      "cg_id": 6,
+      "cg_name": "Javascript"
+    },
+    {
+      "cg_id": 7,
+      "cg_name": "Mobile"
+    },
+    {
+      "cg_id": 24,
+      "cg_name": "AngularJS"
+    },
+    {
+      "cg_id": 25,
+      "cg_name": "Vue"
+    }
+  ],
+  "time": 1483665033
+}
+</code></pre>
+<h3 id="10403">1.4.3. 添加分类</h3>
+<blockquote>
+<p>添加课程分类，普通权限</p>
+</blockquote>
+<h4 id="1160301">1.4.3.1. 地址</h4>
+<p><a href="http://api.botue.com/category/add">http://api.botue.com/category/add</a></p>
+<h4 id="1160302">1.4.3.2. 请求</h4>
+<ul>
+<li>请求方式 POST</li>
+<li>支持格式 FormData</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">cg_name</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">分类名称</td>
+</tr>
+<tr>
+<td style="text-align:left">cg_pid</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">从属分类</td>
+</tr>
+<tr>
+<td style="text-align:left">cg_order</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">排序</td>
+</tr>
+<tr>
+<td style="text-align:left">cg_is_hide</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">是否隐藏 0 显示 1隐藏</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1160303">1.4.3.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "time": 1482398093
+}
+</code></pre>
+<h3 id="10404">1.4.4. 分类列表</h3>
+<blockquote>
+<p>查看所有课程分类，普通权限</p>
+</blockquote>
+<h4 id="1160401">1.4.4.1. 地址</h4>
+<p><a href="http://api.botue.com/category">http://api.botue.com/category</a></p>
+<h4 id="1160402">1.4.4.2. 请求</h4>
+<ul>
+<li>请求方式 GET</li>
+<li>请求参数 无</li>
+</ul>
+<h4 id="1160403">1.4.4.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<p>JSON示例</p>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "result": [
+    {
+      "cg_id": 1,
+      "cg_pid": 0,
+      "cg_name": "前端开发",
+      "cg_order": 10,
+      "cg_is_hide": 0,
+      "cg_update_time": "2016-11-13 15:36:01",
+      "level": 0
+    },
+    {
+      "cg_id": 5,
+      "cg_pid": 1,
+      "cg_name": "HTML/CSS",
+      "cg_order": 10,
+      "cg_is_hide": 0,
+      "cg_update_time": "2016-11-13 15:36:46",
+      "level": 1
+    },
+    {
+      "cg_id": 6,
+      "cg_pid": 1,
+      "cg_name": "Javascript",
+      "cg_order": 10,
+      "cg_is_hide": 0,
+      "cg_update_time": "2016-11-13 15:36:56",
+      "level": 2
+    },
+    {
+      "cg_id": 7,
+      "cg_pid": 1,
+      "cg_name": "Mobile",
+      "cg_order": 10,
+      "cg_is_hide": 0,
+      "cg_update_time": "2016-11-13 15:37:07",
+      "level": 3
+    }
+  ]
+}
+</code></pre>
+<h3 id="10405">1.4.5. 编辑分类</h3>
+<blockquote>
+<p>编辑课程分类，普通权限</p>
+</blockquote>
+<h4 id="1160501">1.4.5.1. 地址</h4>
+<p><a href="http://api.botue.com/category/edit">http://api.botue.com/category/edit</a></p>
+<h4 id="1160502">1.4.5.2. 请求</h4>
+<ul>
+<li>请求方式 GET</li>
+<li>支持格式 queryString</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">cg_id</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">分类id</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1160503">1.4.5.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "result": {
+    "cg_id": 6,
+    "cg_pid": 1,
+    "cg_name": "Javascript",
+    "cg_order": 10,
+    "cg_is_hide": 0,
+    "top": [
+      {
+        "cg_id": 1,
+        "cg_name": "前端开发"
+      },
+      {
+        "cg_id": 2,
+        "cg_name": "后端开发"
+      },
+      {
+        "cg_id": 3,
+        "cg_name": "数据库"
+      },
+      {
+        "cg_id": 4,
+        "cg_name": "视觉设计"
+      },
+      {
+        "cg_id": 15,
+        "cg_name": "移动开发"
+      },
+      {
+        "cg_id": 16,
+        "cg_name": "云计算&amp;大数据"
+      },
+      {
+        "cg_id": 17,
+        "cg_name": "运维&amp;测试"
+      }
+    ]
+  },
+  "time": 1482914596
+}
+</code></pre>
+<h3 id="10406">1.4.6. 修改分类</h3>
+<blockquote>
+<p>修改课程分类，普通权限</p>
+</blockquote>
+<h4 id="1160601">1.4.6.1. 地址</h4>
+<p><a href="http://api.botue.com/category/modify">http://api.botue.com/category/modify</a></p>
+<h4 id="1160602">1.4.6.2. 请求</h4>
+<ul>
+<li>请求方式 POST</li>
+<li>支持格式 FormData</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">cg_id</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">分类id</td>
+</tr>
+<tr>
+<td style="text-align:left">cg_name</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">分类名称</td>
+</tr>
+<tr>
+<td style="text-align:left">cg_pid</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">从属分类</td>
+</tr>
+<tr>
+<td style="text-align:left">cg_order</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">排序</td>
+</tr>
+<tr>
+<td style="text-align:left">cg_is_hide</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">是否隐藏 0 显示 1隐藏</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1160603">1.4.6.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "time": 1482930691
+}
+</code></pre>
+<h2 id="105">1.5. 课程管理</h2>
+<h3 id="10501">1.5.1. 创建课程</h3>
+<blockquote>
+<p>添加课程之课程名称</p>
+</blockquote>
+<h4 id="1250101">1.5.1.1. 地址</h4>
+<p><a href="http://api.botue.com/course/create">http://api.botue.com/course/create</a></p>
+<h4 id="1250102">1.5.1.2. 请求</h4>
+<ul>
+<li>请求方式 POST</li>
+<li>支持格式 FormData</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">cs_name</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">课程名称</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1250103">1.5.1.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "result": {
+    "cs_id": "17"
+  },
+  "time": 1483323950
+}
+</code></pre>
+<h3 id="10502">1.5.2. 基本信息</h3>
+<blockquote>
+<p>添加/编辑课程基本信息</p>
+</blockquote>
+<h4 id="1250201">1.5.2.1. 地址</h4>
+<p><a href="http://api.botue.com/course/basic">http://api.botue.com/course/basic</a></p>
+<h4 id="1250202">1.5.2.2. 请求</h4>
+<ul>
+<li>请求方式 GET</li>
+<li>支持格式 queryString</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">cs_id</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">课程id</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1250203">1.5.2.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "result": {
+    "cs_id": 1,
+    "cs_cg_id": 5,
+    "cs_tc_id": 2,
+    "cs_name": "HTML5",
+    "tc_name": "李清照",
+    "cs_brief": "&lt;p&gt;最精彩的网页布局教程&lt;/p&gt;\n",
+    "cs_tags": "HTML",
+    "cs_cover": "http://static.botue.com/images/cover/half.jpg?x-oss-process=image/crop,x_100,y_50,w_500,h_250",
+    "cs_cg_pid": 1,
+    "teacher": [
+      {
+        "tc_id": 2,
+        "tc_name": "李清照"
+      },
+      {
+        "tc_id": 8,
+        "tc_name": "前端学院"
+      },
+      {
+        "tc_id": 9,
+        "tc_name": "令狐冲"
+      },
+      {
+        "tc_id": 10,
+        "tc_name": "张无忌"
+      },
+      {
+        "tc_id": 16,
+        "tc_name": "风清杨"
+      }
+    ],
+    "category": {
+      "top": [
+        {
+          "cg_id": 1,
+          "cg_name": "前端开发"
+        },
+        {
+          "cg_id": 2,
+          "cg_name": "后端开发"
+        },
+        {
+          "cg_id": 3,
+          "cg_name": "数据库"
+        },
+        {
+          "cg_id": 4,
+          "cg_name": "视觉设计"
+        },
+        {
+          "cg_id": 15,
+          "cg_name": "移动开发"
+        },
+        {
+          "cg_id": 16,
+          "cg_name": "云计算&amp;大数据"
+        },
+        {
+          "cg_id": 17,
+          "cg_name": "运维&amp;测试"
+        }
+      ],
+      "childs": [
+        {
+          "cg_id": 5,
+          "cg_pid": 1,
+          "cg_name": "HTML/CSS"
+        },
+        {
+          "cg_id": 6,
+          "cg_pid": 1,
+          "cg_name": "Javascript"
+        },
+        {
+          "cg_id": 7,
+          "cg_pid": 1,
+          "cg_name": "Mobile"
+        }
+      ]
+    }
+  },
+  "time": 1483321817
+}
+</code></pre>
+<h3 id="10503">1.5.3. 更新基本信息</h3>
+<blockquote>
+<p>更新课程基本信息</p>
+</blockquote>
+<h4 id="1250301">1.5.3.1. 地址</h4>
+<p><a href="http://api.botue.com/course/update/basic">http://api.botue.com/course/update/basic</a></p>
+<h4 id="1250302">1.5.3.2. 请求</h4>
+<ul>
+<li>请求方式 POST</li>
+<li>支持格式 FormData</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">cs_id</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">课程id</td>
+</tr>
+<tr>
+<td style="text-align:left">cs_name</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">课程名称</td>
+</tr>
+<tr>
+<td style="text-align:left">cs_brief</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">课程描述</td>
+</tr>
+<tr>
+<td style="text-align:left">cs_tc_id</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">讲师id</td>
+</tr>
+<tr>
+<td style="text-align:left">cs_cg_id</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">分类id</td>
+</tr>
+<tr>
+<td style="text-align:left">cs_tags</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">课程标签</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1250303">1.5.3.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "result": {
+    "cs_id": "14"
+  },
+  "time": 1483324805
+}
+</code></pre>
+<h3 id="10504">1.5.4. 课程图片</h3>
+<blockquote>
+<p>添加/编辑课程封面</p>
+</blockquote>
+<h4 id="1250401">1.5.4.1. 地址</h4>
+<p><a href="http://api.botue.com/course/picture">http://api.botue.com/course/picture</a></p>
+<h4 id="1250402">1.5.4.2. 请求</h4>
+<ul>
+<li>请求方式 GET</li>
+<li>支持格式 queryString</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">cs_id</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">课程id</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1250403">1.5.4.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "result": {
+    "cs_id": 1,
+    "cs_name": "AngularJS",
+    "tc_name": "李清照",
+    "cs_cover": "http://static.botue.com/images/cover/586a53f784601.jpg?x-oss-process=image/crop,x_0,y_20,w_512,h_256",
+    "cs_cover_original": "http://static.botue.com/images/cover/586a53f784601.jpg"
+  },
+  "time": 1483364755
+}
+</code></pre>
+<h3 id="10505">1.5.5. 上传封面图</h3>
+<blockquote>
+<p>上传课程封面</p>
+</blockquote>
+<h4 id="1250501">1.5.5.1. 地址</h4>
+<p><a href="http://api.botue.com/uploader/cover">http://api.botue.com/uploader/cover</a></p>
+<h4 id="1250502">1.5.5.2. 请求</h4>
+<ul>
+<li>请求方式 POST</li>
+<li>支持格式 FormData</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">cs_id</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">课程id</td>
+</tr>
+<tr>
+<td style="text-align:left">cs_cover_original</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">stream</td>
+<td style="text-align:left">课程图片</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1250503">1.5.5.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "result": {
+    "filename": "586a5c7659052.jpg",
+    "path": "http://static.botue.com/images/cover/586a5c7659052.jpg"
+  },
+  "time": 1483365496
+}
+</code></pre>
+<h3 id="10506">1.5.6. 图片裁切</h3>
+<blockquote>
+<p>课程封面图裁切</p>
+</blockquote>
+<h4 id="1250601">1.5.6.1. 地址</h4>
+<p><a href="http://api.botue.com/course/update/picture">http://api.botue.com/course/update/picture</a></p>
+<h4 id="1250602">1.5.6.2. 请求</h4>
+<ul>
+<li>请求方式 POST</li>
+<li>支持格式 FormData</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">cs_id</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">课程id</td>
+</tr>
+<tr>
+<td style="text-align:left">x</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">x 坐标</td>
+</tr>
+<tr>
+<td style="text-align:left">y</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">y 坐标</td>
+</tr>
+<tr>
+<td style="text-align:left">w</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">w 宽度</td>
+</tr>
+<tr>
+<td style="text-align:left">h</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">h 高度</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1250603">1.5.6.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "result": {
+    "cs_id": 1
+  },
+  "time": 1483364755
+}
+</code></pre>
+<h3 id="10507">1.5.7. 课时管理</h3>
+<blockquote>
+<p>为课程添加/编辑课时</p>
+</blockquote>
+<h4 id="1250701">1.5.7.1. 地址</h4>
+<p><a href="http://api.botue.com/course/lesson">http://api.botue.com/course/lesson</a></p>
+<h4 id="1250702">1.5.7.2. 请求</h4>
+<ul>
+<li>请求方式 GET</li>
+<li>支持格式 queryString</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">cs_id</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">课程id</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1250703">1.5.7.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "result": {
+    "cs_id": 1,
+    "cs_name": "CSS",
+    "tc_name": "李清照",
+    "cs_cover": "http://static.botue.com/images/cover/586a53f784601.jpg?x-oss-process=image/crop,x_0,y_39,w_512,h_256",
+    "lessons": [
+      {
+        "ct_id": 1,
+        "ct_name": "介绍",
+        "ct_video_duration": "08:12"
+      },
+      {
+        "ct_id": 2,
+        "ct_name": "定位",
+        "ct_video_duration": "08:14"
+      }
+    ]
+  },
+  "time": 1483672570
+}
+</code></pre>
+<h3 id="10508">1.5.8. 添加课时</h3>
+<blockquote>
+<p>新增课时</p>
+</blockquote>
+<h4 id="1250801">1.5.8.1. 地址</h4>
+<p><a href="http://api.botue.com/course/chapter/add">http://api.botue.com/course/chapter/add</a></p>
+<h4 id="1250802">1.5.8.2. 请求</h4>
+<ul>
+<li>请求方式 POST</li>
+<li>支持格式 FormData</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ct_cs_id</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">课时所属课程id</td>
+</tr>
+<tr>
+<td style="text-align:left">ct_name</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">课时名称</td>
+</tr>
+<tr>
+<td style="text-align:left">ct_brief</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">课时介绍</td>
+</tr>
+<tr>
+<td style="text-align:left">ct_is_free</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">是否免费 0 否 1 是</td>
+</tr>
+<tr>
+<td style="text-align:left">ct_video</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">视频地址</td>
+</tr>
+<tr>
+<td style="text-align:left">ct_minutes</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">视频时长</td>
+</tr>
+<tr>
+<td style="text-align:left">ct_seconds</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">视频时长</td>
+</tr>
+<tr>
+<td style="text-align:left">ct_recommend_duration</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">推荐学习时长</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1250803">1.5.8.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  code: 200,
+  msg: "OK",
+  result: "5",
+  time: 1483685459
+}
+</code></pre>
+<h3 id="10509">1.5.9. 编辑课时</h3>
+<blockquote>
+<p>编辑课时</p>
+</blockquote>
+<h4 id="1250901">1.5.9.1. 地址</h4>
+<p><a href="http://api.botue.com/course/chapter/edit">http://api.botue.com/course/chapter/edit</a></p>
+<h4 id="1250902">1.5.9.2. 请求</h4>
+<ul>
+<li>请求方式 GET</li>
+<li>支持格式 queryString</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ct_id</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">课时id</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1250903">1.5.9.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "result": {
+    "ct_id": 1,
+    "ct_cs_id": 1,
+    "ct_name": "介绍",
+    "ct_brief": "层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。",
+    "ct_is_free": 1,
+    "ct_video": "http://www.youku.com",
+    "ct_recommend_duration": "0.5",
+    "ct_minutes": "08",
+    "ct_seconds": "12"
+  },
+  "time": 1483684058
+}
+</code></pre>
+<h3 id="10510">1.5.10. 修改课时</h3>
+<blockquote>
+<p>修改课时信息</p>
+</blockquote>
+<h4 id="1251001">1.5.10.1. 地址</h4>
+<p><a href="http://api.botue.com/course/chapter/modify">http://api.botue.com/course/chapter/modify</a></p>
+<h4 id="1251002">1.5.10.2. 请求</h4>
+<ul>
+<li>请求方式 POST</li>
+<li>支持格式 FormData</li>
+<li>请求参数</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">必填</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ct_id</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">课时id</td>
+</tr>
+<tr>
+<td style="text-align:left">ct_cs_id</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">课时所属课程id</td>
+</tr>
+<tr>
+<td style="text-align:left">ct_name</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">课时名称</td>
+</tr>
+<tr>
+<td style="text-align:left">ct_brief</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">课时介绍</td>
+</tr>
+<tr>
+<td style="text-align:left">ct_is_free</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">是否免费 0 否 1 是</td>
+</tr>
+<tr>
+<td style="text-align:left">ct_video</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">视频地址</td>
+</tr>
+<tr>
+<td style="text-align:left">ct_minutes</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">视频时长</td>
+</tr>
+<tr>
+<td style="text-align:left">ct_seconds</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">视频时长</td>
+</tr>
+<tr>
+<td style="text-align:left">ct_recommend_duration</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">推荐学习时长</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1251003">1.5.10.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  code: 200,
+  msg: "OK",
+  time: 1483686203
+}
+</code></pre>
+<h3 id="10511">1.5.11. 课程列表</h3>
+<blockquote>
+<p>查看所有课程</p>
+</blockquote>
+<h4 id="1251101">1.5.11.1. 地址</h4>
+<p><a href="http://api.botue.com/course">http://api.botue.com/course</a></p>
+<h4 id="1251102">1.5.11.2. 请求</h4>
+<ul>
+<li>请求方式 GET</li>
+<li>支持格式 queryString</li>
+<li>请求参数 无</li>
+</ul>
+<h4 id="1251103">1.5.11.3. 响应</h4>
+<ul>
+<li>数据格式 JSON</li>
+<li>数据示例</li>
+</ul>
+<pre><code class="lang-json">{
+  "code": 200,
+  "msg": "OK",
+  "result": [
+    {
+      "cs_id": 1,
+      "cs_name": "CSS",
+      "cs_cover": "http://static.botue.com/images/cover/586a53f784601.jpg?x-oss-process=image/crop,x_0,y_39,w_512,h_256",
+      "tc_name": "李清照",
+      "cg_name": "HTML/CSS"
+    },
+    {
+      "cs_id": 2,
+      "cs_name": "移动Web",
+      "cs_cover": "http://static.botue.com/images/cover/586a5c7659052.jpg?x-oss-process=image/crop,x_13,y_0,w_699,h_350",
+      "tc_name": "风清扬",
+      "cg_name": "HTML/CSS"
+    }
+  ],
+  "time": 1483711927
+}
+</code></pre>
+
+          	</article>
+        </div>
+		</div>
+  
+
+<script type="text/javascript" src="./博学谷接口文档_files/jquery-1.4.4.min.js.下载"></script>
+<script type="text/javascript" src="./博学谷接口文档_files/jquery.ztree.all-3.5.min.js.下载"></script>
+<script type="text/javascript" src="./博学谷接口文档_files/ztree_toc.js.下载"></script>
+<script type="text/javascript" src="./博学谷接口文档_files/toc_conf.js.下载"></script>
+
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</script></body></html>

@@ -1,0 +1,23 @@
+.left{
+    width: 230px;
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    background: lightblue;
+    height: 100%;
+    .profile{
+        .image-container{
+            width: 100px;
+            height: 100px;
+            margin:20px auto;
+        }
+    }
+}
+.right{
+    position:absolute;
+    left:230px;
+    top:0;
+    bottom:0;
+    height:100%;
+}
