@@ -1,0 +1,31 @@
+<div class="panel panel-default">
+
+    <div class="panel-body">
+        <ol class="breadcrumb">
+            <li><a href="#">{{result.cs_name}}</a></li>
+            <li class="active">{{result.tc_name}}</li>
+        </ol>
+
+        <table class='table'>
+            <thead>
+                <th>编号</th>
+                <th>名称</th>
+                <th>时长</th>
+                <th>操作</th>
+            </thead>
+            <tbodd>
+                {{each result.lessons}} 
+                <tr class='warning'>
+                    <td>{{$value.ct_id}}</td>
+                    <td>{{$value.ct_name}}</td>
+                    <td>{{$value.ct_video_duration}}</td>
+                    <td ct_id='{{$value.ct_id}}'>
+                        <button class="btn btn-success btn-edit-course">编辑</button>
+                    </td>
+                </tr>
+                {{/each}}
+                </tbody>
+        </table>
+
+    </div>
+</div>
